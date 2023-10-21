@@ -28,14 +28,14 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-    private List<Post> posts ;
-
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-    private List<Comment> comments ;
-
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-    private List<UserGroup> usersGroups =new ArrayList<UserGroup>();
+//    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+//    private List<Post> posts ;
+//
+//    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+//    private List<Comment> comments ;
+//
+//    @OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+//    private List<UserGroup> usersGroups =new ArrayList<UserGroup>();
 
 
     @Override

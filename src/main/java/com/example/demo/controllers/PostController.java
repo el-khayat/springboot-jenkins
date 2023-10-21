@@ -31,13 +31,13 @@ public class PostController {
     public Post add(@RequestBody Post post){
         return postService.add(post);
     }
-    @PostMapping("{id}")
-    public Post delete(@RequestParam Post post){
-        return postService.add(post);
-    }
-    @PostMapping("{id}")
-    public Post update(@RequestParam Post post){
-        return postService.update(post);
-    }
+//    @PostMapping("{id}")
+//    public Post delete(@RequestParam Post post){
+//        return postService.add(post);
+//    }
+//    @PostMapping("{id}")
+//    public Post update(@RequestParam Post post){
+//        return postService.update(post);
+//    }
 
 }

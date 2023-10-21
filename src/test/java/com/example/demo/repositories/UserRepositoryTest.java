@@ -30,7 +30,7 @@ class UserRepositoryTest {
 
     @Test
     void getOne(){
-        User user = underTest.findById(1L).get();
+        User user = underTest.findById(1).get();
 
         System.out.println(user);
 

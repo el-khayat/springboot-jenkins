@@ -1,9 +1,11 @@
 package com.example.demo.entites;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
+
 public enum Permission {
 
     ADMIN_READ("admin:read"),

@@ -3,6 +3,7 @@ package com.example.demo.entites;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
         name = "posts"
 )
 @Data
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,13 +21,11 @@ public class Post {
        private String image ;
        private int likes ;
 
-       @ManyToOne(fetch = FetchType.EAGER)
-       private User user ;
+//       @ManyToOne(fetch = FetchType.EAGER)
+//       private User user ;
+//
+//       @OneToMany(fetch = FetchType.EAGER,mappedBy = "post")
+//       private List<Comment> comments ;
 
-       @OneToMany(fetch = FetchType.EAGER,mappedBy = "post")
-       private List<Comment> comments ;
-
-    public Post() {
-
-    }
+   
 }
