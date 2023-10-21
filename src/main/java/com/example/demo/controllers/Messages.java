@@ -11,7 +11,9 @@ import java.util.List;
 public class Messages {
 
     @GetMapping("/message")
-    public ResponseEntity<List<String>> sendMessages(){
-        return ResponseEntity.ok(Arrays.asList("username:mohamed","password:123456"));
+    public ResponseEntity<String> sendMessages(){
+    	
+        return ResponseEntity
+        		.ok("Hello , this is a public End Point!");
     }
 }
