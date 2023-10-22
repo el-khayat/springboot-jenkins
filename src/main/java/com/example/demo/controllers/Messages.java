@@ -14,6 +14,6 @@ public class Messages {
     public ResponseEntity<String> sendMessages(){
     	
         return ResponseEntity
-        		.ok("Hello , this is a public End Point!");
+        		.ok("Hello , this is a public End Point! v2");
     }
 }
